@@ -1,0 +1,24 @@
+.profile{
+  background-color: yellow;
+  border:2px solid green;
+  padding:2rem;
+
+&__left-container{
+  display: flex;
+  flex-direction: row;
+  gap:2rem;
+  align-content: center;
+  border:2px solid red;
+}
+&__details {
+
+  
+}
+
+&__star {
+  color: #ffd700; 
+}
+}
+
+
+

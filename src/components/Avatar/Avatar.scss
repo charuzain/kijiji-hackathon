@@ -1,12 +1,12 @@
 .avatar{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
 
 &__container {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%; 
   overflow: hidden;
   background-image: url('../../assets/Mohan-muruge.jpg'); 
