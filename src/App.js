@@ -1,9 +1,10 @@
 import './App.css';
-import Social from "./components/Social/Social";
+import UserProfile from './pages/UserProfile/UserProfile';
 
 function App() {
   return (
     <>
+      <UserProfile/>
       <Social/>
     </>
   );
