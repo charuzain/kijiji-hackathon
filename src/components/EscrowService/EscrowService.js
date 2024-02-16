@@ -19,9 +19,12 @@ const EscrowService = () => {
   const handleCommentSubmit = () => {
     // Prevent submitting empty comments
     if (!commentInput.trim()) return;
-
+    const newComment = {
+      text: commentInput,
+      username: "DefaultUser:",
+    };
     // Add the new comment to the comments array
-    setComments([...comments, commentInput]);
+    setComments([...comments, newComment]);
     setCommentInput(""); // Clear the input box after submitting
   };
 
@@ -51,7 +54,8 @@ const EscrowService = () => {
             <h2 className="comments__title">Comments</h2>
             {comments.map((comment, index) => (
               <div key={index} className="comments__comment">
-                {comment}
+                <p className="comments__userName">{comment.username}</p>
+                <p className="comments__text">{comment.text}</p>
               </div>
             ))}
             <input
@@ -72,45 +76,3 @@ const EscrowService = () => {
 };
 
 export default EscrowService;
-
-// import React, { useState } from "react";
-// import "./EscrowService.scss";
-
-// const EscrowService = () => {
-//   const [transactionStatus, setTransactionStatus] = useState("pending");
-
-//   const handleConfirmTransaction = () => {
-//     // Simulate confirming the transaction
-//     setTransactionStatus("confirmed");
-//   };
-
-//   const handleReleaseFunds = () => {
-//     // Simulate releasing the funds to the seller
-//     setTransactionStatus("funds_released");
-//   };
-
-//   return (
-//     <div className="escrow-container">
-//       <h1 className="escrow-header">Escrow Service</h1>
-//       <p className="escrow-description">
-//         Funds are securely held until both parties confirm the transaction is
-//         satisfactory.
-//       </p>
-//       {transactionStatus === "pending" && (
-//         <button className="escrow-button" onClick={handleConfirmTransaction}>
-//           Confirm Transaction
-//         </button>
-//       )}
-//       {transactionStatus === "confirmed" && (
-//         <button className="escrow-button" onClick={handleReleaseFunds}>
-//           Release Funds to Seller
-//         </button>
-//       )}
-//       {transactionStatus === "funds_released" && (
-//         <p>Funds have been released to the seller.</p>
-//       )}
-//     </div>
-//   );
-// };
-
-// export default EscrowService;

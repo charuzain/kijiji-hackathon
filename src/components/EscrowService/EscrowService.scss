@@ -42,6 +42,16 @@
 .comments {
   &__comment {
     color: white;
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  &__userName {
+    text-align: left;
+  }
+  &__text {
+    align-text: left;
   }
   &__title {
     color: white;
