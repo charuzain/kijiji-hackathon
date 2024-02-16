@@ -1,51 +1,51 @@
-import Avatar from '../../components/Avatar/Avatar';
-import './UserProfile.scss';
-import facebookIcon from '../../assets/facebook_480.png';
-import phoneIcon from '../../assets/phone-call_480.png';
-import emailIcon from '../../assets/email-1_480.png';
-import chatIcon from '../../assets/chat1_480.png';
-import SocialItem from '../../components/SocialItem/SocialItem';
-import ReviewChip from '../../components/ReviewChip/ReviewChip';
-import Divider from '../../components/Divider/Divider';
-import ProductCard from '../../components/ProductCard/ProductCard';
-import image1 from '../../assets/product1.webp';
-import image2 from '../../assets/product2.webp';
-import image3 from '../../assets/product3.webp';
-import image4 from '../../assets/product4.webp';
-import image5 from '../../assets/product1.webp';
-import header from '../../assets/header.png';
+import Avatar from "../../components/Avatar/Avatar";
+import "./UserProfile.scss";
+import facebookIcon from "../../assets/facebook_480.png";
+import phoneIcon from "../../assets/phone-call_480.png";
+import emailIcon from "../../assets/email-1_480.png";
+import chatIcon from "../../assets/chat1_480.png";
+import SocialItem from "../../components/SocialItem/SocialItem";
+import ReviewChip from "../../components/ReviewChip/ReviewChip";
+import Divider from "../../components/Divider/Divider";
+import ProductCard from "../../components/ProductCard/ProductCard";
+import image1 from "../../assets/product1.webp";
+import image2 from "../../assets/product2.webp";
+import image3 from "../../assets/product3.webp";
+import image4 from "../../assets/product4.webp";
+import image5 from "../../assets/product1.webp";
+import header from "../../assets/Images/header.png";
 
 const UserProfile = () => {
   const products = [
     {
       image: image1,
-      productName: 'Vtech',
-      price: '32.00',
-      location: 'NorthYork',
+      productName: "Vtech",
+      price: "32.00",
+      location: "NorthYork",
     },
     {
       image: image2,
-      productName: 'Soft Toy',
-      price: '32.00',
-      location: 'NorthYork',
+      productName: "Soft Toy",
+      price: "32.00",
+      location: "NorthYork",
     },
     {
       image: image3,
-      productName: 'Car',
-      price: '32.00',
-      location: 'NorthYork',
+      productName: "Car",
+      price: "32.00",
+      location: "NorthYork",
     },
     {
       image: image4,
-      productName: 'Trucks',
-      price: '32.00',
-      location: 'NorthYork',
+      productName: "Trucks",
+      price: "32.00",
+      location: "NorthYork",
     },
     {
       image: image5,
-      productName: 'Vtech Learn',
-      price: '32.00',
-      location: 'NorthYork',
+      productName: "Vtech Learn",
+      price: "32.00",
+      location: "NorthYork",
     },
   ];
 
@@ -72,7 +72,7 @@ const UserProfile = () => {
               <p>James Lu</p>
               <p>Joined Jan 2014</p>
               <p>NorthYork, ON</p>
-              <div className="profile__rating">{renderStars(5)} (300)</div>{' '}
+              <div className="profile__rating">{renderStars(5)} (300)</div>{" "}
             </div>
           </div>
           <div className="profile__right-container">

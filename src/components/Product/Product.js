@@ -1,5 +1,5 @@
 import React from "react";
-import headerPic from "../../header.png";
+import headerPic from "../../assets/Images/header.png";
 import car from "../../car.png";
 import { useNavigate } from "react-router-dom";
 const Product = () => {

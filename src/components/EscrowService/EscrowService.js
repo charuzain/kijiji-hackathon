@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./EscrowService.scss";
-import headerPic from "../../header.png";
+import headerPic from "../../assets/Images/header.png";
 const EscrowService = () => {
   const [transactionStatus, setTransactionStatus] = useState("pending");
   const [comments, setComments] = useState([]);
