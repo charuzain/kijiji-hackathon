@@ -1,9 +1,10 @@
 import './App.css';
+import Social from "./components/Social/Social";
 
 function App() {
   return (
     <>
-      <h1>KIJIJI</h1>
+      <Social/>
     </>
   );
 }
