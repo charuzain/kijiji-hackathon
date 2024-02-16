@@ -1,7 +1,14 @@
+// *{
+//   margin: 0px;
+//   padding: 0px;
+// }
+
+
 .profile{
   background-color: yellow;
   border:2px solid green;
   padding:2rem;
+  
 
 &__left-container{
   display: flex;
@@ -18,7 +25,48 @@
 &__star {
   color: #ffd700; 
 }
+
+&__wrapper{
+  display: flex;
+  flex-direction: row;
+  gap:4rem;
+}
+
+&__right-container{
+  border-left:1px solid grey;
+  padding:0 1rem;
+}
+&__right-header{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 3rem;
+margin-bottom: 1.5rem;
 }
 
 
+&__social-description{
+  margin: 5px;
+  padding: 0;
+}
+&__social-container{
+display: flex;
+
+}
+}
+
+
+.stats-container{
+  display: flex;
+  gap:6rem;
+  // justify-content: space-around;
+}
+
+.icon{
+  width: 40px;
+
+  // filter: brightness(0) invert(1);
+
+
+}
 
