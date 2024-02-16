@@ -1,3 +1,4 @@
+
 import "./App.css";
 import EscrowServicePage from "./pages/EscrowServicePage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -13,7 +14,7 @@ function App() {
       </BrowserRouter>
       <h1>KIJIJI</h1>
     </>
+
   );
 }
 
-export default App;
