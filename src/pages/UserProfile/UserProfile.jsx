@@ -6,8 +6,48 @@ import emailIcon from '../../assets/email.png';
 import chatIcon from '../../assets/chat1.png';
 import SocialItem from '../../components/SocialItem/SocialItem';
 import ReviewChip from '../../components/ReviewChip/ReviewChip';
+import Divider from '../../components/Divider/Divider';
+import ProductCard from '../../components/ProductCard/ProductCard';
+import image1 from '../../assets/product1.webp';
+import image2 from '../../assets/product2.webp';
+import image3 from '../../assets/product3.webp';
+import image4 from '../../assets/product4.webp';
+import image5 from '../../assets/product1.webp';
 
 const UserProfile = () => {
+  const products = [
+    {
+      image: image1,
+      productName: 'Toy',
+      price: '32.00',
+      location: 'NorthYork',
+    },
+    {
+      image: image2,
+      productName: 'Toy',
+      price: '32.00',
+      location: 'NorthYork',
+    },
+    {
+      image: image3,
+      productName: 'Toy',
+      price: '32.00',
+      location: 'NorthYork',
+    },
+    {
+      image: image4,
+      productName: 'Toy',
+      price: '32.00',
+      location: 'NorthYork',
+    },
+    {
+      image: image5,
+      productName: 'Toy',
+      price: '32.00',
+      location: 'NorthYork',
+    },
+  ];
+
   const renderStars = (rating) => {
     const stars = [];
     for (let i = 0; i < rating; i++) {
@@ -107,6 +147,22 @@ const UserProfile = () => {
           <ReviewChip number={100} compliment="Fair Negotiation" />
         </div>
       </div>
+      <Divider />
+      <section>
+        <h2>Items from this seller</h2>
+        <div className="product-container">
+          {products.map((product, index) => (
+            <ProductCard
+              key={index}
+              image={product.image}
+              productName={product.productName}
+              
+              price={product.price}
+              location={product.location}
+            />
+          ))}
+        </div>
+      </section>
     </main>
   );
 };
