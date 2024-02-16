@@ -1,9 +1,10 @@
 import './App.css';
+import UserProfile from './pages/UserProfile/UserProfile';
 
 function App() {
   return (
     <>
-      <h1>KIJIJI</h1>
+      <UserProfile/>
     </>
   );
 }
