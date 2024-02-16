@@ -1,9 +1,9 @@
 import Avatar from '../../components/Avatar/Avatar';
 import './UserProfile.scss';
-import facebookIcon from '../../assets/facebook.png';
-import phoneIcon from '../../assets/phone-call.png';
-import emailIcon from '../../assets/email.png';
-import chatIcon from '../../assets/chat1.png';
+import facebookIcon from '../../assets/facebook_480.png';
+import phoneIcon from '../../assets/phone-call_480.png';
+import emailIcon from '../../assets/email-1_480.png';
+import chatIcon from '../../assets/chat1_480.png';
 import SocialItem from '../../components/SocialItem/SocialItem';
 import ReviewChip from '../../components/ReviewChip/ReviewChip';
 import Divider from '../../components/Divider/Divider';
