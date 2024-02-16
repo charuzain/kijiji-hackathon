@@ -1,5 +1,5 @@
 
-import './App.css';
+import './App.scss';
 import UserProfile from './pages/UserProfile/UserProfile';
 import EscrowServicePage from "./pages/EscrowServicePage";
 import ProductPage from "./pages/ProductPage";
@@ -11,7 +11,7 @@ function App() {
           <Routes>
             <Route path="/product" element={<ProductPage />} />
             <Route path="/escrowService" element={<EscrowServicePage />} />
-           <Route path="/escrowService" element={<UserProfile/>} />
+           <Route path="/" element={<UserProfile/>} />
           </Routes>
         </main>
       </BrowserRouter>
