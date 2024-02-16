@@ -1,0 +1,30 @@
+.review-chip {
+  display: inline-flex;
+  align-items: center;
+  border: 2px solid ;
+  border-radius: 3.125rem;
+  padding: .5rem 1rem;
+  margin-right: 10px;
+  margin-bottom: 1rem;
+
+
+&__number {
+  background-color:  #373373;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  width: 35px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+&__compliment {
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: normal;
+}
+}

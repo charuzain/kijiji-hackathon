@@ -1,16 +1,18 @@
 import "./ProductPage.scss";
-import bedding from "../../Assets/Images/bedding.png";
-import Likes from "../../Assets/Icons/favorite_FILL0_wght400_GRAD0_opsz24.svg";
-import View from "../../Assets/Icons/visibility_FILL0_wght400_GRAD0_opsz24.svg";
-import Other from "../../Assets/Images/Other-products.png";
-import Profile from "../../Assets/Images/Profile.png";
-import header from "../../Assets/Images/header.png";
+import bedding from "../../assets/Images/bedding.png";
+import Likes from "../../assets/Icons/favorite_FILL0_wght400_GRAD0_opsz24.svg";
+import View from "../../assets/Icons/visibility_FILL0_wght400_GRAD0_opsz24.svg";
+import Other from "../../assets/Images/Other-products.png";
+import Profile from "../../assets/Images/Profile.png";
+import header from "../../assets/Images/header.png";
 import { Link } from "react-router-dom";
 
 export default function ProductPage() {
   return (
     <>
-      <img src={header} alt="header image" className="Product__header" />
+      <Link to="/social">
+        <img src={header} alt="header image" className="Product__header" />{" "}
+      </Link>
 
       <section className="Product">
         <div className="Product-main">

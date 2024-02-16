@@ -1,5 +1,4 @@
 import EscrowService from "../components/EscrowService/EscrowService";
-
 const EscrowServicePage = () => {
   return (
     <>

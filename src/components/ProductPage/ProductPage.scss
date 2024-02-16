@@ -2,6 +2,9 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/mixins" as *;
 
+body {
+  font-family: sans-serif;
+}
 .Product__header {
   width: 100%;
   padding-bottom: 4rem;
@@ -19,6 +22,7 @@
     }
     &__price {
       padding-bottom: 1rem;
+      font-size: 1.1rem;
       color: green;
       font-weight: 500;
     }
