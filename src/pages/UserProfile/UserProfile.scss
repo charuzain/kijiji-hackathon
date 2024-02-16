@@ -70,3 +70,18 @@ gap: 1.5rem;
   padding: 0 3rem;
   // border-top: 3px solid  #373373;
 }
+
+
+.verified {
+    background-color: #373373;
+    display: inline-block;
+    padding: 0.7em 0.4em; 
+    border-radius: 4%;
+    font-size: inherit; 
+    color: white; 
+
+  }
+
+  .label{
+    font-weight: bold;
+  }
