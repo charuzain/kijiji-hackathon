@@ -1,0 +1,93 @@
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.Product__header {
+  width: 100%;
+  padding-bottom: 4rem;
+}
+.Product {
+  margin: 0 6rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  width: 100%;
+
+  &-main {
+    &__heading {
+      padding-bottom: 1rem;
+    }
+    &__price {
+      padding-bottom: 1rem;
+      color: green;
+      font-weight: 500;
+    }
+    &__image {
+      &-img {
+        width: 50rem;
+        height: 47rem;
+      }
+    }
+    &__description-heading {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+    &__description {
+      padding-bottom: 1rem;
+      width: 50rem;
+    }
+    &__buttons {
+      display: flex;
+      gap: 1.5rem;
+      &-view {
+        display: flex;
+        justify-content: baseline;
+        border-radius: 3px;
+        padding: 6px;
+        background-color: #373373;
+        color: #fff;
+        &-img {
+          height: 1rem;
+          padding-right: 4px;
+        }
+      }
+      &-likes {
+        border-radius: 3px;
+        padding: 6px;
+        background-color: #373373;
+        color: #fff;
+        display: flex;
+        justify-content: baseline;
+        &-img {
+          height: 1rem;
+          padding-right: 4px;
+          color: #fff;
+        }
+      }
+      &-pay {
+        border-radius: 3px;
+        padding: 6px;
+        background-color: #373373;
+
+        &-link {
+          text-decoration: none;
+          color: #fff;
+        }
+      }
+    }
+  }
+  &-profile {
+    padding-top: 5rem;
+    &__image {
+      width: 25rem;
+    }
+  }
+}
+.Product-suggested {
+  margin: 0 6rem;
+  padding-top: 4rem;
+
+  &__img {
+    width: 100%;
+  }
+}
