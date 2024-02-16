@@ -124,7 +124,7 @@ const UserProfile = () => {
             </div>
           </div>
         </div>
-        <p className='verified'>KijiJi Verified Member</p>
+        <p className="verified">Kijiji Verified Member</p>
         <div className="profile__bottom-container">
           <div className="stats-container">
             <div className="stat">
@@ -151,7 +151,7 @@ const UserProfile = () => {
           </div>
         </div>
         <Divider />
-        <section className='products'>
+        <section className="products">
           <h2>Items from this seller</h2>
           <div className="product-container">
             {products.map((product, index) => (
